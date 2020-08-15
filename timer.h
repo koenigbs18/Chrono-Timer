@@ -50,7 +50,7 @@ public:
 	std::chrono::time_point<T> start() {
 		this->started = true;
 		this->stop_time = T::now();
-		this->start_time = T::now();
+		this->start_time = this->stop_time;
 		return this->start_time;
 	}
 
