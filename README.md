@@ -13,4 +13,6 @@ Compiled with latest C++20 features (std:c++latest)
 	if(t.get_elapsed_ms().count() < i) {
 		//...
 	}
+	t.stop();
+	double run_time = t.get_run_time_ms().count();
 ```
